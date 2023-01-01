@@ -17,7 +17,7 @@ const COLOR_SCALE_MAP: Record<string, string> = {
 // --color-neutral-*, --color-warning-*). These scales are LOCKED to the logo
 // palette, so the backend/admin theme (which still returns the old blue) can
 // no longer override them. success/error/info still follow the API.
-export const BRAND_PRIMARY_500 = "#0b6e4f";
+export const BRAND_PRIMARY_500 = "#6a8e22";
 const LOCKED_SCALES = new Set(["primary", "neutral", "warn"]);
 
 export interface ThemeColorsData {

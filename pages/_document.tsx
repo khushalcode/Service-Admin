@@ -16,7 +16,7 @@ export default function Document() {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="The Cleaning Bee" />
-        <meta name="theme-color" content="#0B6E4F" />
+        <meta name="theme-color" content="#6a8e22" />
 
         {/* iOS ignores the manifest for splash screens — each device size needs
             its own explicit link (Android/Chrome builds its splash from the

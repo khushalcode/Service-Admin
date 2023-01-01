@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "@/components/ui/locale-link";
 import { ChevronDownIcon } from "@/components/icons/icons";
 import logo from "@/assets/brand/logo.png";
+import whiteLogo from "@/assets/brand/white_logo.png";
 import { mainNavItems } from "@/lib/navigation-config";
 import { NavLink } from "@/components/layout/nav-link";
 import { AppButton } from "@/components/ui/app-button";
@@ -77,12 +78,22 @@ export function Navigation() {
           <Link
             href="/"
             className="flex shrink-0 items-center overflow-hidden"
-            style={{ width: `${progress * 44}px` }}
+            style={{ width: `${progress * 222}px` }}
           >
             <AppImage
               src={logo}
               alt="The Cleaning Bee"
-              className="h-11 w-auto shrink-0"
+              className="h-8 w-auto shrink-0 dark:hidden"
+              style={{
+                width: "auto",
+                opacity: progress,
+                transform: `translateY(${(1 - progress) * -24}px)`,
+              }}
+            />
+            <AppImage
+              src={whiteLogo}
+              alt="The Cleaning Bee"
+              className="hidden h-8 w-auto shrink-0 dark:block"
               style={{
                 width: "auto",
                 opacity: progress,

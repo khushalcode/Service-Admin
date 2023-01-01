@@ -6,6 +6,7 @@ import { AppImage } from "@/components/ui/app-image";
 import { AppButton } from "@/components/ui/app-button";
 import { useConsent } from "@/lib/consent-context";
 import logo from "@/assets/brand/logo.png";
+import whiteLogo from "@/assets/brand/white_logo.png";
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>;
@@ -61,7 +62,8 @@ export function PwaInstallPrompt() {
   return (
     <div className="fixed inset-x-4 bottom-20 z-50 mx-auto flex max-w-md items-center gap-3 rounded-2xl border border-border-default bg-bg-primary p-4 shadow-[0px_8px_24px_0px_rgba(0,0,0,0.12)] lg:hidden">
       <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-bg-brand-subtle">
-        <AppImage src={logo} alt="The Cleaning Bee" className="size-7" />
+        <AppImage src={logo} alt="The Cleaning Bee" className="h-6 w-auto dark:hidden" />
+        <AppImage src={whiteLogo} alt="The Cleaning Bee" className="hidden h-6 w-auto dark:block" />
       </span>
       <div className="flex flex-1 flex-col gap-0.5">
         <span className="text-sm font-medium text-text-primary">

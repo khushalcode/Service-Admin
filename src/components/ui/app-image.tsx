@@ -3,7 +3,7 @@
 import Image, { type StaticImageData } from "next/image";
 import type { CSSProperties } from "react";
 import { useEffect, useState } from "react";
-import { ImageOff } from "lucide-react";
+import logo from "@/assets/brand/logo.png";
 import { useAppSelector } from "@/store/hooks";
 import { cn } from "@/lib/utils";
 
@@ -52,7 +52,8 @@ export function AppImage({
           )}
           style={style}
         >
-          <ImageOff className="size-[28%] text-icon-secondary" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={logo.src} alt="" className="w-[60%] max-w-full object-contain opacity-60" />
         </span>
       );
     }

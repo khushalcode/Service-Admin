@@ -31,7 +31,7 @@ body { font-family: sans-serif; margin: 2rem; color: #1f2937; }
 table { width: 100%; border-collapse: collapse; }
 th, td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid #dedcdd; font-size: 0.875rem; }
 th { background: #efeef0; }
-a { color: #0b6e4f; text-decoration: none; }
+a { color: #6A8E22; text-decoration: none; }
 a:hover { text-decoration: underline; }
 </style>
 </head>

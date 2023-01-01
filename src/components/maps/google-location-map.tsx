@@ -71,7 +71,7 @@ function providerPinIcon(selected: boolean, kind: "service" | "provider" = "prov
   const height = Math.round(59 * scale);
   const glyph = kind === "service" ? SERVICE_GLYPH : providerGlyph;
   const svg = `<svg width="${width}" height="${height}" viewBox="0 0 45 59" xmlns="http://www.w3.org/2000/svg">
-    <path d="${PIN_OUTLINE}" fill="#0B6E4F"/>
+    <path d="${PIN_OUTLINE}" fill="#6a8e22"/>
     ${glyph}
   </svg>`;
   return {
@@ -86,7 +86,7 @@ function clusterPinIcon(label: string, selected: boolean) {
   const width = Math.round(45 * scale);
   const height = Math.round(59 * scale);
   const svg = `<svg width="${width}" height="${height}" viewBox="0 0 45 59" xmlns="http://www.w3.org/2000/svg">
-    <path d="${PIN_OUTLINE}" fill="#0B6E4F"/>
+    <path d="${PIN_OUTLINE}" fill="#6a8e22"/>
     <text x="22.5" y="24" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="sans-serif" font-weight="700" font-size="16">${label}</text>
   </svg>`;
   return {

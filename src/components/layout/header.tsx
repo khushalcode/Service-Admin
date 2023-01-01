@@ -42,7 +42,13 @@ export function Header() {
                   src={logo}
                   alt="The Cleaning Bee"
                   priority
-                  className="h-9 w-auto lg:h-11"
+                  className="h-7 w-auto sm:h-8 lg:h-8 dark:hidden"
+                />
+                <AppImage
+                  src={whiteLogo}
+                  alt="The Cleaning Bee"
+                  priority
+                  className="hidden h-7 w-auto sm:h-8 lg:h-8 dark:block"
                 />
               </Link>
 

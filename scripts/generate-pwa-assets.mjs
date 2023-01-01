@@ -83,14 +83,14 @@ function loadDotEnvLocal() {
  * still works offline/without a configured backend. */
 async function fetchBrandColor() {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-  const fallback = readManifest().theme_color || "#0B6E4F";
+  const fallback = readManifest().theme_color || "#6a8e22";
   if (!apiUrl) return fallback;
   try {
     const response = await fetch(new URL("get_theme_colors", apiUrl));
     const json = await response.json();
     // Brand primary is locked to the Cleaning Bee logo green (see src/lib/theme-colors.ts)
     void json;
-    return "#0B6E4F";
+    return "#6a8e22";
   } catch {
     console.warn("Couldn't reach get_theme_colors API — using manifest.json's current theme_color instead.");
     return fallback;

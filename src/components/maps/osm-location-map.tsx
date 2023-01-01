@@ -38,7 +38,7 @@ const providerPinIcon = (selected: boolean, kind: "service" | "provider" = "prov
   return divIcon({
     className: "",
     html: `<svg width="${width}" height="${height}" viewBox="0 0 45 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="${PIN_OUTLINE}" fill="#0B6E4F"/>
+      <path d="${PIN_OUTLINE}" fill="#6a8e22"/>
       ${glyph}
     </svg>`,
     iconSize: [width, height],
@@ -53,7 +53,7 @@ const clusterPinIcon = (label: string, selected: boolean) => {
   return divIcon({
     className: "",
     html: `<svg width="${width}" height="${height}" viewBox="0 0 45 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="${PIN_OUTLINE}" fill="#0B6E4F"/>
+      <path d="${PIN_OUTLINE}" fill="#6a8e22"/>
       <text x="22.5" y="24" text-anchor="middle" dominant-baseline="middle" fill="white" font-family="sans-serif" font-weight="700" font-size="16">${label}</text>
     </svg>`,
     iconSize: [width, height],

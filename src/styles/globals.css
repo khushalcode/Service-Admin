@@ -89,29 +89,29 @@
   /* Colors — Design Tokens: docs/ui/Primitive/Value.tokens.json (Figma "Value" mode)
      Brand palette (Deep Forest Green primary, Medium Emerald secondary,
      Golden Yellow accent, Off-White background, Dark Charcoal text) */
-  --color-primary-50: #e8f5ee;
-  --color-primary-100: #c5e5d2;
-  --color-primary-200: #9bd1b1;
-  --color-primary-300: #6fba8c;
-  --color-primary-400: #1f7a5a;
-  --color-primary-500: #0b6e4f;
-  --color-primary-600: #095b40;
-  --color-primary-700: #074732;
-  --color-primary-800: #053424;
-  --color-primary-900: #032316;
-  --color-primary-950: #02120b;
+  --color-primary-50: #f4f8e8;
+  --color-primary-100: #e5eecb;
+  --color-primary-200: #cfdf9f;
+  --color-primary-300: #b3ca6b;
+  --color-primary-400: #8fae3a;
+  --color-primary-500: #6a8e22;
+  --color-primary-600: #587519;
+  --color-primary-700: #465c14;
+  --color-primary-800: #34430f;
+  --color-primary-900: #232d0a;
+  --color-primary-950: #131904;
 
-  --color-neutral-50: #f8f8f5;
-  --color-neutral-100: #efeef0;
-  --color-neutral-200: #dedcdd;
-  --color-neutral-300: #c4c2c0;
-  --color-neutral-400: #9a9893;
-  --color-neutral-500: #72706a;
-  --color-neutral-600: #565550;
-  --color-neutral-700: #3d3b36;
-  --color-neutral-800: #2a2925;
-  --color-neutral-900: #1f2937;
-  --color-neutral-950: #11181d;
+  --color-neutral-50: #f9faf5;
+  --color-neutral-100: #f0f1ea;
+  --color-neutral-200: #e0e2d6;
+  --color-neutral-300: #c8cbb9;
+  --color-neutral-400: #9da28a;
+  --color-neutral-500: #747a60;
+  --color-neutral-600: #565c44;
+  --color-neutral-700: #3f4a28;
+  --color-neutral-800: #1f2216;
+  --color-neutral-900: #111111;
+  --color-neutral-950: #0a0b07;
 
   --color-success-50: #e5faef;
   --color-success-100: #cbf6df;
@@ -125,17 +125,17 @@
   --color-success-900: #062313;
   --color-success-950: #03110a;
 
-  --color-warning-50: #fdf8e6;
-  --color-warning-100: #faefc4;
-  --color-warning-200: #f4dd8b;
-  --color-warning-300: #eecb52;
-  --color-warning-400: #e9bd2a;
-  --color-warning-500: #d4af37;
-  --color-warning-600: #b3942b;
-  --color-warning-700: #8e7321;
-  --color-warning-800: #6a5418;
-  --color-warning-900: #463710;
-  --color-warning-950: #2c2309;
+  --color-warning-50: #fff8e1;
+  --color-warning-100: #ffefb8;
+  --color-warning-200: #ffe27a;
+  --color-warning-300: #ffd23d;
+  --color-warning-400: #f9c312;
+  --color-warning-500: #f4b800;
+  --color-warning-600: #c99500;
+  --color-warning-700: #9a7000;
+  --color-warning-800: #6b4e00;
+  --color-warning-900: #453300;
+  --color-warning-950: #281d00;
 
   --color-error-50: #fbeaea;
   --color-error-100: #f7d4d5;
@@ -346,9 +346,9 @@
   --bg-primary: var(--color-neutral-50);
   --bg-secondary: var(--color-neutral-100);
   --bg-tertiary: var(--color-neutral-300);
-  --bg-brand: var(--color-primary-500);
-  --bg-brand-hover: var(--color-primary-600);
-  --bg-brand-pressed: var(--color-primary-700);
+  --bg-brand: var(--color-primary-600);
+  --bg-brand-hover: var(--color-primary-700);
+  --bg-brand-pressed: var(--color-primary-800);
   --bg-brand-subtle: var(--color-primary-50);
   --bg-brand-disabled: var(--color-neutral-200);
   --bg-inverse: var(--color-neutral-900);
@@ -369,7 +369,7 @@
   --surface-primary: var(--color-neutral-50);
   --surface-secondary: var(--color-neutral-50);
   --surface-elevated: var(--color-neutral-50);
-  --surface-brand: var(--color-primary-500);
+  --surface-brand: var(--color-primary-600);
   --surface-hover: var(--color-neutral-100);
   --surface-pressed: var(--color-neutral-200);
 
@@ -377,7 +377,7 @@
   --text-secondary: var(--color-neutral-600);
   --text-tertiary: var(--color-neutral-400);
   --text-disabled: var(--color-neutral-300);
-  --text-brand: var(--color-primary-500);
+  --text-brand: var(--color-primary-600);
   --text-success: var(--color-success-500);
   --text-warning: var(--color-warning-500);
   --text-error: var(--color-error-500);
@@ -390,18 +390,18 @@
   --border-muted: var(--color-neutral-100);
   --border-strong: var(--color-neutral-400);
   --border-black: var(--color-neutral-950);
-  --border-brand: var(--color-primary-500);
+  --border-brand: var(--color-primary-600);
   --border-success: var(--color-success-500);
   --border-warning: var(--color-warning-500);
   --border-error: var(--color-error-500);
   --border-info: var(--color-info-500);
-  --border-focus: var(--color-primary-500);
+  --border-focus: var(--color-primary-600);
 
   --icon-primary: var(--color-neutral-800);
   --icon-secondary: var(--color-neutral-600);
   --icon-tertiary: var(--color-neutral-400);
   --icon-disabled: var(--color-neutral-300);
-  --icon-brand: var(--color-primary-500);
+  --icon-brand: var(--color-primary-600);
   --icon-success: var(--color-success-500);
   --icon-warning: var(--color-warning-500);
   --icon-error: var(--color-error-500);
@@ -413,7 +413,7 @@
   --overlay-default: rgb(15 23 29 / 40%);
   --overlay-strong: rgb(15 23 29 / 75%);
   /* Focus ring — brand gold accent for high-visibility focus indicators */
-  --focus-ring: rgb(212 175 55 / 45%);
+  --focus-ring: rgb(244 184 0 / 45%);
 
   /* Component — references Semantic (per docs/ui/Component/Value.tokens.json aliasData); same var names work in dark mode since Semantic flips under .dark */
   --button-primary-bg: var(--bg-brand);
@@ -610,7 +610,7 @@
   --overlay-default: rgb(17 24 29 / 80%);
   --overlay-strong: rgb(17 24 29 / 90%);
   /* Focus ring — brand gold accent, stronger in dark for visibility */
-  --focus-ring: rgb(212 175 55 / 65%);
+  --focus-ring: rgb(244 184 0 / 65%);
 
   /* shadcn/ui slots — repointed onto Semantic tokens above (no independent values) */
   --background: var(--bg-primary);

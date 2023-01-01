@@ -32,7 +32,7 @@ export const themeColorsInitScript = `(function () {
     // OS status/toolbar color (manifest.json's static default) to the
     // persisted brand color before first paint, so returning visitors never
     // see a flash of the default blue.
-    var primary500 = "#0b6e4f";
+    var primary500 = "#6a8e22";
     if (primary500) {
       var meta = document.querySelector('meta[name="theme-color"]');
       if (meta) meta.setAttribute("content", primary500);

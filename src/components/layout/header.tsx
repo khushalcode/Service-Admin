@@ -2,8 +2,8 @@
 
 import { Link } from "@/components/ui/locale-link";
 import { AppImage } from "@/components/ui/app-image";
-import logo from "@/assets/brand/logo.svg";
-import whiteLogo from "@/assets/brand/white_logo.svg";
+import logo from "@/assets/brand/logo.png";
+import whiteLogo from "@/assets/brand/white_logo.png";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { HeaderSearch } from "@/components/layout/header-search";
 import { LocationPicker } from "@/components/layout/location-picker";
@@ -40,7 +40,7 @@ export function Header() {
               <Link href="/" className="flex shrink-0 items-center">
                 <AppImage
                   src={logo}
-                  alt="eDemand"
+                  alt="The Cleaning Bee"
                   priority
                   className="h-9 w-auto lg:h-11"
                 />

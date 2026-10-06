@@ -912,7 +912,7 @@
     "free": "Free"
   },
   "footer": {
-    "tagline": "eDemand: Your premier destination for efficient and reliable on-demand services.",
+    "tagline": "The Cleaning Bee: Your trusted destination for efficient and reliable cleaning services.",
     "downloadApp": "Download Our App Today",
     "googlePlay": "Google Play",
     "appStore": "App Store",
@@ -922,7 +922,7 @@
     "contactUs": "Contact Us",
     "becomeAnProvider": "Become An Provider",
     "termsAndConditions": "Terms & Conditions",
-    "copyright": "Copyright © {year} eDemand. All rights reserved."
+    "copyright": "Copyright © {year} The Cleaning Bee. All rights reserved."
   },
   "auth": {
     "loginRequired": {

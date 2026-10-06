@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@/components/ui/locale-link";
 import { ChevronDownIcon } from "@/components/icons/icons";
-import logo from "@/assets/brand/logo.svg";
+import logo from "@/assets/brand/logo.png";
 import { mainNavItems } from "@/lib/navigation-config";
 import { NavLink } from "@/components/layout/nav-link";
 import { AppButton } from "@/components/ui/app-button";
@@ -77,11 +77,11 @@ export function Navigation() {
           <Link
             href="/"
             className="flex shrink-0 items-center overflow-hidden"
-            style={{ width: `${progress * 177}px` }}
+            style={{ width: `${progress * 44}px` }}
           >
             <AppImage
               src={logo}
-              alt="eDemand"
+              alt="The Cleaning Bee"
               className="h-11 w-auto shrink-0"
               style={{
                 width: "auto",

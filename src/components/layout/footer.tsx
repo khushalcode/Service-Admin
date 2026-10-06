@@ -3,7 +3,7 @@
 import { Link } from "@/components/ui/locale-link";
 import { Clock, MapPin, Mail, Phone } from "lucide-react";
 import { AppImage } from "@/components/ui/app-image";
-import whiteLogo from "@/assets/brand/white_logo.svg";
+import whiteLogo from "@/assets/brand/white_logo.png";
 import {
   PlayStoreIcon,
   AppStoreIcon,
@@ -94,7 +94,7 @@ export function Footer() {
         <div className="flex flex-col items-start gap-6 lg:flex-row">
           <div className="flex w-full flex-col items-start gap-6 py-6 lg:w-96 lg:shrink-0">
             <Link href="/" className="flex items-center">
-              <AppImage src={whiteLogo} alt="eDemand" className="h-11 w-auto" />
+              <AppImage src={whiteLogo} alt="The Cleaning Bee" className="h-11 w-auto" />
             </Link>
             <p className="text-base text-footer-light-text">
               {t("footer.tagline")}

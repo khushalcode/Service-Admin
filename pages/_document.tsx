@@ -15,7 +15,7 @@ export default function Document() {
         <link rel="apple-touch-icon" href="/apple-icon.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="eDemand" />
+        <meta name="apple-mobile-web-app-title" content="The Cleaning Bee" />
         <meta name="theme-color" content="#0B6E4F" />
 
         {/* iOS ignores the manifest for splash screens — each device size needs

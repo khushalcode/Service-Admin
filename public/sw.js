@@ -23,7 +23,7 @@ const messaging = firebase.messaging();
 
 messaging.onBackgroundMessage((payload) => {
   const { title, body, icon } = payload.notification ?? {};
-  self.registration.showNotification(title ?? "eDemand", {
+  self.registration.showNotification(title ?? "The Cleaning Bee", {
     body,
     icon: icon ?? "/favicon.ico",
   });

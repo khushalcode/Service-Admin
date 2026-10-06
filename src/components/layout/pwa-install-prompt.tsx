@@ -5,7 +5,7 @@ import { Download, X } from "lucide-react";
 import { AppImage } from "@/components/ui/app-image";
 import { AppButton } from "@/components/ui/app-button";
 import { useConsent } from "@/lib/consent-context";
-import logo from "@/assets/brand/logo.svg";
+import logo from "@/assets/brand/logo.png";
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>;
@@ -61,11 +61,11 @@ export function PwaInstallPrompt() {
   return (
     <div className="fixed inset-x-4 bottom-20 z-50 mx-auto flex max-w-md items-center gap-3 rounded-2xl border border-border-default bg-bg-primary p-4 shadow-[0px_8px_24px_0px_rgba(0,0,0,0.12)] lg:hidden">
       <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-bg-brand-subtle">
-        <AppImage src={logo} alt="eDemand" className="size-7" />
+        <AppImage src={logo} alt="The Cleaning Bee" className="size-7" />
       </span>
       <div className="flex flex-1 flex-col gap-0.5">
         <span className="text-sm font-medium text-text-primary">
-          Install eDemand App
+          Install The Cleaning Bee App
         </span>
         <span className="text-xs text-text-secondary">
           Add to your home screen for faster, app-like access.
@@ -76,10 +76,10 @@ export function PwaInstallPrompt() {
         iconOnly
         leftIcon={Download}
         onClick={handleInstall}
-        aria-label="Install eDemand app"
+        aria-label="Install The Cleaning Bee app"
         className="shrink-0 rounded-lg p-2 text-text-inverse-light"
       >
-        Install eDemand app
+        Install The Cleaning Bee app
       </AppButton>
       <AppButton
         variant="link"

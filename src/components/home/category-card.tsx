@@ -36,7 +36,7 @@ export function CategoryCard({ category }: { category: CategoryTreeNode }) {
           src={getCategoryIcon(category)}
           alt={category.name}
           fill
-          className="object-contain p-2.5"
+          className="object-cover"
         />
       </span>
 

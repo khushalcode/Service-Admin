@@ -1,7 +1,7 @@
-// Brand-colored (Cleaning Bee green + gold) category icons, served from
-// /public/category-icons/*.svg. Matched by keywords in the category name/slug
+// Real photographic category icons, served from
+// /public/category-icons/*.png. Matched by keywords in the category name/slug
 // so they work no matter what image the admin panel has uploaded. To use a
-// new icon: drop an SVG in public/category-icons and add a keyword row below.
+// new icon: drop a PNG in public/category-icons and add a keyword row below.
 const ICON_RULES: Array<[RegExp, string]> = [
   [/pest|termite|bug|rodent|fumigat/i, "pest-control"],
   [/plumb|pipe|tap|leak|bath/i, "plumbing"],
@@ -21,7 +21,7 @@ const ICON_RULES: Array<[RegExp, string]> = [
 export function getCategoryIcon(category: { name?: string; slug?: string }): string {
   const haystack = `${category.name ?? ""} ${category.slug ?? ""}`;
   for (const [pattern, icon] of ICON_RULES) {
-    if (pattern.test(haystack)) return `/category-icons/${icon}.svg`;
+    if (pattern.test(haystack)) return `/category-icons/${icon}.png`;
   }
-  return "/category-icons/default.svg";
+  return "/category-icons/default.png";
 }

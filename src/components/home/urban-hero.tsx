@@ -51,7 +51,8 @@ export function UrbanHero({
                   <AppImage
                     src={getCategoryIcon({ name: category.name, slug: category.slug })}
                     alt={category.name}
-                    className="size-1/2 object-contain transition-transform group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                 </span>
                 <span className="line-clamp-2 text-xs font-medium text-text-primary sm:text-sm">
